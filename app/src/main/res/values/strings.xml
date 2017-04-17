@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">海淘记账</string>
+    <string name="hello_world">请登录</string>
+    <string name="username">用户名：</string>
+    <string name="action_settings">Exit</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="Login">登录</string>
+    <string name="title_activity_init">主页面</string>
+    <string name="welcome">欢迎：</string>
+    <string name="ordername">订单人名：</string>
+    <string name="orderdate">订单日期：</string>
+    <string-array name="main_menu">
+        <item>查询商品</item>
+        <item>新增商品</item>
+        <item>修改商品</item>
+        <item>结算运费</item>
+        <item>查询订单</item>
+        <item>新增订单</item>
+        <item>修改订单</item>
+        <item>结算订单</item>
+    </string-array>
+    <string-array name="currarray">
+        <item>人民币</item>
+        <item>美元</item>
+        <item>日元</item>
+        <item>英镑</item>
+        <item>港币</item>
+    </string-array>
+    <string name="source">来源：&#160;</string>
+    <string name="prices">总价：&#160;¥</string>
+
+    <string name="toolname">商品名称：</string>
+    <string name="sources">商品来源：</string>
+    <string name="date">下单日期：</string>
+    <string name="current">币种：</string>
+    <string name="num">商品个数：</string>
+    <string name="soldnum">商品已售个数：</string>
+    <string name="restnum">剩余商品个数：</string>
+    <string name="buynum">购买个数：</string>
+    <string name="totprice">官网价格：</string>
+    <string name="feepercent">折扣率：</string>
+    <string name="feeprice">折后价格：</string>
+    <string name="exchangerate">交易汇率：</string>
+    <string name="buyexcrate">购买汇率：</string>
+    <string name="buyprice">购买价格：</string>
+    <string name="rmb_totprice">人民币总价：</string>
+    <string name="rmb_singprice">人民币单价：</string>
+    <string name="transprice">海运费单价：</string>
+    <string name="intransprice">国内快递费：</string>
+    <string name="intransdate">快递日期：</string>
+    <string name="intransnumber">快递单号：</string>
+    <string name="orderrealpay">实付金额：</string>
+    <string name="paymode">支付方式：</string>
+    <string name="transfee">运费单值：</string>
+    <string name="singlesum">商品+运费单价：</string>
+    <string name="weight">商品单个重量(g)：</string>
+    <string name="totweight">商品总重量(g)：</string>
+    <string name="totprices">税前总价格：</string>
+    <string name="feetotprice">税后总价格：</string>
+    <string name="tottransprice">海运费总价：</string>
+    <string name="totorderprice">订单总金额：</string>
+    <string name="totordernum">商品总数量：</string>
+
+    <string name="title_activity_detail">商品详单</string>
+    <string name="title_activity_qry">查询商品</string>
+    <string name="title_activity_add">新增商品</string>
+    <string name="title_activity_modi">修改商品</string>
+    <string name="title_activity_count">结算商品</string>
+    <string name="title_activity_qry_order">查询订单</string>
+    <string name="title_activity_add_order">新增订单</string>
+    <string name="title_activity_modi_order">修改订单</string>
+    <string name="title_activity_count_order">结算订单</string>
+</resources>

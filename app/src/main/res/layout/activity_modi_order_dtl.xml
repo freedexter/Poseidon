@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ordername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff640036"
+        android:layout_marginTop="50dp"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/ordername"
+        android:text="于"/>
+    <TextView
+        android:id="@+id/orderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff640036"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/text1"
+        android:textSize="50px" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/ordername"
+        android:text="购买"/>
+    <TextView
+        android:id="@+id/toolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff640036"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ordername"
+        android:layout_toRightOf="@+id/text2"
+        android:textSize="50px" />
+    <TextView
+        android:id="@+id/rprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="30dp"
+        android:textSize="50px"
+        android:layout_below="@+id/text2"
+        android:text="@string/rmb_totprice" />
+    <TextView
+        android:id="@+id/rmb_totprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/text2"
+        android:layout_toRightOf="@+id/rprice" />
+
+    <TextView
+        android:id="@+id/bprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="50px"
+        android:layout_below="@+id/rprice"
+        android:text="@string/buyprice" />
+    <TextView
+        android:id="@+id/buyprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rprice"
+        android:layout_toRightOf="@+id/bprice" />
+
+    <TextView
+        android:id="@+id/bnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="50px"
+        android:text="@string/buynum"
+        android:layout_below="@+id/bprice"/>
+
+    <EditText
+        android:id="@+id/buynum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff640036"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:layout_toRightOf="@+id/bnum"
+        android:layout_below="@+id/bprice"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/bexcrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="50px"
+        android:text="@string/buyexcrate"
+        android:layout_below="@+id/bnum"/>
+
+    <EditText
+        android:id="@+id/buyexcrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff640036"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:layout_toRightOf="@+id/bexcrate"
+        android:layout_below="@+id/bnum"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/bexcrate">
+
+        <Button
+            android:id="@+id/deletebuttom"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="删除订单"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/confimbutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="修改订单"
+            android:layout_toRightOf="@+id/returnbutton"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2" />
+    </LinearLayout>
+</RelativeLayout>

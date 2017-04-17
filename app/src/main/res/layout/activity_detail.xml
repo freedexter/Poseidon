@@ -1,0 +1,413 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.poseidon.activity_detail"
+    android:id="@+id/shop_dtl">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llywelcome"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:text="@string/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/welcome" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/llybuttom"
+        android:layout_below="@+id/llywelcome"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:id="@+id/toolname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ff640036"
+
+                android:textSize="80px" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/sources"
+                android:layout_below="@+id/toolname" />
+
+            <TextView
+                android:id="@+id/sourcefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/source"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/toolname" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/date"
+                android:layout_below="@+id/source" />
+
+            <TextView
+                android:id="@+id/trandate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/date"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/source" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/current"
+                android:layout_below="@+id/date" />
+
+            <TextView
+                android:id="@+id/currenttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/current"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/date" />
+
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/num"
+                android:layout_below="@+id/current" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/num"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/current" />
+
+
+            <TextView
+                android:id="@+id/soldnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/soldnum"
+                android:layout_below="@+id/num" />
+
+            <TextView
+                android:id="@+id/soldnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/soldnum"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/num" />
+
+
+            <TextView
+                android:id="@+id/totprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/totprice"
+                android:layout_below="@+id/soldnum" />
+
+            <TextView
+                android:id="@+id/totprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/totprice"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/soldnum" />
+
+
+            <TextView
+                android:id="@+id/feepercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/feepercent"
+                android:layout_below="@+id/totprice" />
+
+            <TextView
+                android:id="@+id/feepercents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/feepercent"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/totprice" />
+
+            <TextView
+                android:id="@+id/feeprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/feeprice"
+                android:layout_below="@+id/feepercent" />
+
+            <TextView
+                android:id="@+id/feeprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/feeprice"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/feepercent" />
+
+            <TextView
+                android:id="@+id/exchangerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/exchangerate"
+                android:layout_below="@+id/feeprice" />
+
+            <TextView
+                android:id="@+id/exchangerates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/exchangerate"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/feeprice" />
+
+
+            <TextView
+                android:id="@+id/rmb_totprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/rmb_totprice"
+                android:layout_below="@+id/exchangerate" />
+
+            <TextView
+                android:id="@+id/rmb_totprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/rmb_totprice"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/exchangerate" />
+
+            <TextView
+                android:id="@+id/rmb_singprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/rmb_singprice"
+                android:layout_below="@+id/rmb_totprice" />
+
+            <TextView
+                android:id="@+id/rmb_singprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/rmb_singprice"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/rmb_totprice" />
+
+            <TextView
+                android:id="@+id/transprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/transprice"
+                android:layout_below="@+id/rmb_singprice" />
+
+            <TextView
+                android:id="@+id/transprices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/transprice"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/rmb_singprice" />
+
+            <TextView
+                android:id="@+id/singlesum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/singlesum"
+                android:layout_below="@+id/transprice" />
+
+            <TextView
+                android:id="@+id/singlesums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/singlesum"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/transprice" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/weight"
+                android:layout_below="@+id/singlesum" />
+
+            <TextView
+                android:id="@+id/weights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/weight"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/singlesum" />
+
+            <TextView
+                android:id="@+id/totweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="15dp"
+                android:textSize="40px"
+                android:text="@string/totweight"
+                android:layout_below="@+id/weight" />
+
+            <TextView
+                android:id="@+id/totweights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff640036"
+                android:layout_toRightOf="@+id/totweight"
+                android:layout_marginTop="15dp"
+                android:textSize="50px"
+                android:layout_below="@+id/weight" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="返回"
+            android:layout_below="@+id/totweight"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+</RelativeLayout>

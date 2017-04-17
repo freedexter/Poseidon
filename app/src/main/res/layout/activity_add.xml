@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.poseidon.AddActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="40dp"
+        android:textSize="50px"
+        android:text="@string/sources" />
+
+    <EditText
+        android:id="@+id/sourcefrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/source"></EditText>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="50px"
+        android:text="@string/date"
+        android:layout_below="@+id/sourcefrom" />
+
+    <EditText
+        android:id="@+id/shopdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/sourcefrom" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewItem"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_below="@+id/shopdate"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/toolname" />
+
+            <EditText
+                android:id="@+id/toolname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/name"></EditText>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/totprice"
+                android:layout_below="@+id/toolname" />
+
+            <EditText
+                android:id="@+id/totprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/price"
+                android:layout_below="@+id/toolname"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/spinnercurrarray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totprice"
+                android:entries="@array/currarray"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/toolname"
+                android:layout_alignBottom="@+id/totprice" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/num"
+                android:layout_below="@+id/totprice" />
+
+            <EditText
+                android:id="@+id/toolnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/num"
+                android:layout_below="@+id/totprice"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/feepercent"
+                android:layout_below="@+id/toolnum" />
+
+            <EditText
+                android:id="@+id/feepercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/fee"
+                android:layout_below="@+id/toolnum"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/feeflag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="%"
+                android:layout_toRightOf="@+id/feepercent"
+                android:layout_below="@+id/toolnum" />
+
+            <TextView
+                android:id="@+id/exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/exchangerate"
+                android:layout_below="@+id/feepercent" />
+
+            <EditText
+                android:id="@+id/exchangerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/exchange"
+                android:layout_below="@+id/feepercent"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/wei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff004b6b"
+                android:layout_marginTop="20dp"
+                android:textSize="45px"
+                android:text="@string/weight"
+                android:layout_below="@+id/exchangerate" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/wei"
+                android:layout_below="@+id/exchangerate"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#ffff4c31"
+                android:gravity="center"
+                android:text="新增"
+                android:layout_below="@+id/weight"
+                android:layout_gravity="bottom" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

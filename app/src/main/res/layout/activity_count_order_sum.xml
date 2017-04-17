@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/totprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="50dp"
+        android:textSize="40px"
+        android:text="@string/totorderprice" />
+
+    <TextView
+        android:id="@+id/totorderprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/totprice" />
+
+    <TextView
+        android:id="@+id/totorderpriceflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/totorderprice"
+        android:layout_marginLeft="10dp"
+        android:textSize="45px"
+        android:text="RMB" />
+
+    <TextView
+        android:id="@+id/totnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="15dp"
+        android:textSize="40px"
+        android:text="@string/totordernum"
+        android:layout_below="@+id/totprice"/>
+
+    <TextView
+        android:id="@+id/totordernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45px"
+        android:textColor="#ff640036"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/totnum"
+        android:layout_below="@+id/totprice"/>
+
+    <TextView
+        android:id="@+id/intprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:textSize="40px"
+        android:text="@string/intransprice"
+        android:layout_below="@+id/totnum"/>
+
+    <EditText
+        android:id="@+id/intransprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff640036"
+        android:layout_marginTop="15dp"
+        android:ems="5"
+        android:layout_toRightOf="@+id/intprice"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/totnum"/>
+
+    <TextView
+        android:id="@+id/intranspriceflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/intransprice"
+        android:layout_marginLeft="10dp"
+        android:textSize="45px"
+        android:text="RMB"
+        android:layout_below="@+id/totnum"/>
+
+    <TextView
+        android:id="@+id/intdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:textSize="40px"
+        android:text="@string/intransdate"
+        android:layout_below="@+id/intprice" />
+
+    <EditText
+        android:id="@+id/intransdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/intdate"
+        android:layout_below="@+id/intprice" />
+
+    <TextView
+        android:id="@+id/intnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:textSize="40px"
+        android:text="@string/intransnumber"
+        android:layout_below="@+id/intdate" />
+
+    <EditText
+        android:id="@+id/intransnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/intnumber"
+        android:layout_below="@+id/intdate" />
+
+
+    <TextView
+        android:id="@+id/orderpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:textSize="40px"
+        android:text="@string/orderrealpay"
+        android:layout_below="@+id/intnumber" />
+
+    <EditText
+        android:id="@+id/orderrealpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/orderpay"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/intnumber" />
+    <TextView
+        android:id="@+id/orderrealpayflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/orderrealpay"
+        android:layout_marginLeft="10dp"
+        android:textSize="45px"
+        android:text="RMB"
+        android:layout_below="@+id/intnumber"/>
+
+    <TextView
+        android:id="@+id/pmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="25dp"
+        android:textSize="40px"
+        android:text="@string/paymode"
+        android:layout_below="@+id/orderpay" />
+
+    <EditText
+        android:id="@+id/paymode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/pmode"
+        android:layout_below="@+id/orderpay" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/pmode">
+
+        <Button
+            android:id="@+id/clearbuttom"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="清空"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/countbutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="确认"
+            android:layout_toRightOf="@+id/returnbutton"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2" />
+    </LinearLayout>
+</RelativeLayout>

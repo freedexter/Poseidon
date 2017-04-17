@@ -1,0 +1,4 @@
+include ':app', ':actionbarsherlock', ':SlidingMenu',':Android-PullToRefresh-master'
+project(':actionbarsherlock').projectDir = new File('libraries/actionbarsherlock')
+project(':SlidingMenu').projectDir = new File('libraries/SlidingMenu')
+project(':Android-PullToRefresh-master').projectDir = new File('libraries/Android-PullToRefresh-master')
