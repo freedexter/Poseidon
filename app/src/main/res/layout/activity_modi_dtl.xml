@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff640036"
+        android:layout_marginTop="30dp"
+        android:textSize="80px" />
+
+
+    <TextView
+        android:id="@+id/totprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/totprice"
+        android:layout_below="@+id/toolname" />
+
+    <EditText
+        android:id="@+id/totprices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/totprice"
+        android:layout_below="@+id/toolname" />
+
+    <TextView
+        android:id="@+id/currenttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_toRightOf="@+id/totprices"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:layout_below="@+id/toolname" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/num"
+        android:layout_below="@+id/totprices" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/num"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_below="@+id/totprices" />
+
+
+    <TextView
+        android:id="@+id/feepercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/feepercent"
+        android:layout_below="@+id/number" />
+
+    <EditText
+        android:id="@+id/feepercents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/feepercent"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_below="@+id/number" />
+
+    <TextView
+        android:id="@+id/feepercentflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/feepercents"
+        android:textSize="40px"
+        android:text="%"
+        android:layout_below="@+id/number" />
+
+    <TextView
+        android:id="@+id/exchangerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/exchangerate"
+        android:layout_below="@+id/feepercents" />
+
+    <EditText
+        android:id="@+id/exchangerates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/exchangerate"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/feepercents" />
+
+    <TextView
+        android:id="@+id/transprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/transprice"
+        android:layout_below="@+id/exchangerates" />
+
+    <EditText
+        android:id="@+id/transprices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/transprice"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/exchangerates" />
+
+    <TextView
+        android:id="@+id/transpriceflag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/transprices"
+        android:textSize="40px"
+        android:text="人民币"
+        android:layout_below="@+id/exchangerates" />
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/weight"
+        android:layout_below="@+id/transprices" />
+
+    <EditText
+        android:id="@+id/weights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/weight"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_below="@+id/transprices" />
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/weights">
+
+        <Button
+            android:id="@+id/backbuttom"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="删除商品"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/countbutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="结算商品"
+            android:layout_toRightOf="@+id/returnbutton"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</RelativeLayout>

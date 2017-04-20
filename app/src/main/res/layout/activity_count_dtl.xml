@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.poseidon.CountActivity">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llylist"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:weightSum="1">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:id="@+id/llylist1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+    <TextView
+        android:id="@+id/totweight"
+        android:text="@string/totweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="10dp"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/totweights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff640036"
+        android:layout_marginTop="5dp"
+        android:textSize="50px"
+        android:layout_toRightOf="@+id/totweight" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llylist2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+    <TextView
+        android:id="@+id/transfee"
+        android:text="@string/transfee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_below="@+id/totweights"
+        android:layout_marginTop="10dp"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/transfees"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff640036"
+        android:layout_marginTop="5dp"
+        android:textSize="50px"
+        android:layout_below="@+id/totweights"
+        android:layout_toRightOf="@+id/transfee" />
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="330dp"
+        android:id="@+id/listView"
+        android:layout_below="@+id/transfees"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1.73" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/llylist">
+
+        <Button
+            android:id="@+id/returnbutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="返回"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/countbutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="确认更新"
+            android:layout_toRightOf="@+id/returnbutton"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

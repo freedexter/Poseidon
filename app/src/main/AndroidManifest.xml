@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.poseidon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InitActivity"
+            android:label="@string/title_activity_init"></activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"></activity>
+        <activity
+            android:name=".QryActivity"
+            android:label="@string/title_activity_qry"></activity>
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/title_activity_add"></activity>
+        <activity
+            android:name=".ModiActivity"
+            android:label="@string/title_activity_modi"></activity>
+        <activity
+            android:name=".CountActivity"
+            android:label="@string/title_activity_count"></activity>
+        <activity
+            android:name=".QryOrderActivity"
+            android:label="@string/title_activity_qry_order"></activity>
+        <activity
+            android:name=".AddOrderActivity"
+            android:label="@string/title_activity_add_order"></activity>
+        <activity
+            android:name=".ModiOrderActivity"
+            android:label="@string/title_activity_modi_order"></activity>
+        <activity
+            android:name=".CountOrderActivity"
+            android:label="@string/title_activity_count_order"></activity>
+    </application>
+
+</manifest>

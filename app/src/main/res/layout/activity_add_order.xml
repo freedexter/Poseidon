@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.poseidon.AddOrderActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="50dp"
+        android:textSize="40px"
+        android:text="@string/ordername" />
+
+    <EditText
+        android:id="@+id/ordername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/orderdate"
+        android:layout_below="@+id/ordername" />
+
+    <EditText
+        android:id="@+id/orderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/ordername" />
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/sources"
+        android:layout_below="@+id/orderdate" />
+
+    <Spinner
+        android:id="@+id/sourcefrom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/orderdate"
+        android:layout_alignBottom="@+id/source" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/date"
+        android:layout_below="@+id/sourcefrom" />
+
+    <Spinner
+        android:id="@+id/trandate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sourcefrom"
+        android:layout_alignBottom="@+id/date1" />
+
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff004b6b"
+        android:layout_marginTop="20dp"
+        android:textSize="40px"
+        android:text="@string/toolname"
+        android:layout_below="@+id/trandate" />
+
+    <Spinner
+        android:id="@+id/toolname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/trandate"
+        android:layout_alignBottom="@+id/name1" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/llybuttom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/toolname">
+
+        <Button
+            android:id="@+id/clearbuttom"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="清空"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/qrybutton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#ffff4c31"
+            android:gravity="center"
+            android:text="下单"
+            android:layout_toRightOf="@+id/returnbutton"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2" />
+    </LinearLayout>
+</RelativeLayout>
